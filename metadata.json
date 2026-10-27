@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix FisioPro - Fisioterapia e Pilates",
+  "description": "Clínica de fisioterapia ortopédica, esportiva e pilates clínico em Belém. Movimento sem dor e performance guiada pela ciência.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
