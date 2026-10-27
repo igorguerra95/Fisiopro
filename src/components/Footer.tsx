@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext.tsx';
 import { MapPin, Phone, Clock, ArrowUp } from 'lucide-react';
+import { FisioProLogo } from './FisioProLogo.tsx';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -16,11 +17,7 @@ export function Footer() {
           {/* Brand Col (4 cols) */}
           <div className="lg:col-span-4 flex flex-col">
             <div className="flex items-center gap-2.5 text-lg font-bold text-white mb-3">
-              <img
-                src="/src/assets/images/fisiopro_logo.svg"
-                alt="Logo FisioPro"
-                className="w-8 h-8 object-contain"
-              />
+              <FisioProLogo className="w-8 h-8" />
               <span className="font-display tracking-tight text-white">
                 Fisio<span className="text-[#A855F7]">Pro</span>
               </span>

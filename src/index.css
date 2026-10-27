@@ -29,6 +29,11 @@
     --border: 220 13% 91%;
   }
 
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   body {
     font-family: var(--font-sans);
     background-color: hsl(var(--background));
@@ -43,17 +48,17 @@
   }
 }
 
-/* Custom Utilities */
+/* Custom Utilities - Calibrated for 100% zoom viewports */
 .hero-headline {
-  font-size: clamp(2.5rem, 5.2vw, 4.25rem);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
+  font-size: clamp(1.65rem, 2.25vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
 }
 
 .section-headline {
-  font-size: clamp(2rem, 3.4vw, 2.75rem);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
 }
 
 /* Hairline glass & borders */
