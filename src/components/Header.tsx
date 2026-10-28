@@ -52,21 +52,13 @@ export function Header({ onOpenBooking, onOpenTriage }: HeaderProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {/* Strictly 3 zones Top Bar Contract with responsive spacing */}
           <div className="flex items-center justify-between gap-2.5 sm:gap-4 lg:gap-6">
-            {/* Zone 1: Clinic Logo in top-left (Inline SVG vector, zero corruption) */}
+            {/* Zone 1: Clinic Official Complete Logo (Symbol + stylized text, transparent background) */}
             <a
               href="#inicio"
-              className="flex items-center gap-2 sm:gap-2.5 whitespace-nowrap shrink-0 group py-0.5"
+              className="flex items-center whitespace-nowrap shrink-0 group py-1"
               aria-label="FisioPro - Fisioterapia e Pilates"
             >
-              <FisioProLogo className="w-8 h-8 sm:w-9 sm:h-9 transition-transform duration-200 group-hover:scale-105" />
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-base sm:text-lg text-slate-900 tracking-tight leading-none">
-                  Fisio<span className="text-[#6B21A8]">Pro</span>
-                </span>
-                <span className="text-[8.5px] sm:text-[9.5px] uppercase font-semibold tracking-wider text-[#16A34A] mt-0.5">
-                  Fisioterapia & Pilates
-                </span>
-              </div>
+              <FisioProLogo className="h-8 sm:h-9 md:h-10 w-auto transition-transform duration-200 group-hover:scale-[1.02]" />
             </a>
 
             {/* Zone 2: Single-line clean text nav links (fits perfectly at 100% zoom across all screens) */}
@@ -131,12 +123,7 @@ export function Header({ onOpenBooking, onOpenTriage }: HeaderProps) {
         <div className="fixed inset-0 z-50 lg:hidden bg-slate-900/40 backdrop-blur-xs pt-20 px-4 pb-6 transition-all">
           <div className="bg-white rounded-2xl p-6 shadow-xl border border-slate-100 max-w-sm mx-auto flex flex-col gap-4">
             <div className="flex justify-between items-center pb-3 border-b border-slate-100">
-              <div className="flex items-center gap-2.5">
-                <FisioProLogo className="w-8 h-8" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-700">
-                  {t.brand.tagline}
-                </span>
-              </div>
+              <FisioProLogo className="h-7 sm:h-8 w-auto" />
               <div className="flex items-center gap-1 text-xs border border-slate-200 rounded-lg p-0.5">
                 {(['pt-BR', 'en', 'es'] as Language[]).map((lang) => (
                   <button

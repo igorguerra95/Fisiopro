@@ -14,13 +14,9 @@ export function Footer() {
     <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-900 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-900">
-          {/* Brand Col (4 cols) */}
           <div className="lg:col-span-4 flex flex-col">
-            <div className="flex items-center gap-2.5 text-lg font-bold text-white mb-3">
-              <FisioProLogo className="w-8 h-8" />
-              <span className="font-display tracking-tight text-white">
-                Fisio<span className="text-[#A855F7]">Pro</span>
-              </span>
+            <div className="mb-4">
+              <FisioProLogo className="h-8 sm:h-9 w-auto" variant="light" />
             </div>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 max-w-sm">
